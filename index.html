@@ -3,55 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>প্রোফাইল পোর্টফোলিও</title>
+    <title>Abdun Nur | Graphic Designer & Photo Editor</title>
+    <!-- CSS File Link -->
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for icons -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    .profile-pic {
-    border-radius: 50px; /* কোণগুলো গোল করে ফেলবে */
-}
-    
 </head>
 <body>
 
-    <!-- হেডার ব্যানার -->
-    <div class="header-banner"></div>
-
-    <!-- প্রোফাইল কার্ড সেকশন -->
-    <div class="profile-container">
-        <div class="profile-img-box">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500" alt="প্রোফাইল ছবি" id="userPhoto">
-            <span class="pro-badge">PRO</span>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="banner">
+            <h1>Abdun Nur</h1>
+            <p class="tagline">Graphic Designer & Photo Editor</p>
         </div>
+        <div class="profile-container">
+            <img src="IMG-20261018-WA0000.jpg" alt="Abdun Nur Profile Picture" class="profile-pic">
+            <span class="badge">PRO</span>
+        </div>
+        <h2 class="designer-name">Abdun Nur</h2>
+        
+        <ul class="info-list">
+            <li><i class="fa-solid fa-briefcase"></i> Available for Freelance & Fulltime</li>
+            <li><i class="fa-solid fa-wand-magic-sparkles"></i> Graphic & Photo Editing Expert</li>
+            <li><i class="fa-solid fa-location-dot"></i> Bangladesh</li>
+        </ul>
 
-        <h1 id="userName">মোহাম্মদ হারুন অর রশিদ</h1>
-        <p class="status-text"><i class="fa-regular fa-file-lines"></i> <span id="userTitle">Logo Branding & T-shirt Designer</span></p>
-        <p class="contact-info"><i class="fa-solid fa-phone"></i> <span id="userPhone">+8801916519796</span></p>
-        <p class="location-text"><i class="fa-solid fa-location-dot"></i> <span id="userLocation">হাকরইল, নাচোল, চাঁপাইনবাবগঞ্জ</span></p>
-
-        <!-- অ্যাকশন বাটনসমূহ -->
+        <!-- Action Buttons -->
         <div class="action-buttons">
-            <a href="#" class="btn btn-primary" id="whatsappBtn"><i class="fa-brands fa-whatsapp"></i> WhatsApp যোগাযোগ</a>
-            <a href="#" class="btn btn-secondary" id="emailBtn"><i class="fa-regular fa-envelope"></i> ইমেল পাঠান</a>
+            <a href="https://www.facebook.com/md.harun.816419" target="_blank" class="btn btn-primary"><i class="fa-brands fa-facebook"></i> Follow on Facebook</a>
+            <a href="tel:+8801763527841" class="btn btn-secondary"><i class="fa-solid fa-phone"></i> Call: +8801763527841</a>
+            <a href="https://wa.me/8801763527841" target="_blank" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> WhatsApp 24/7</a>
         </div>
-    </div>
+    </header>
 
-    <!-- সার্ভিস সেকশন -->
-    <div class="services-section">
-        <h2>সেবাসমূহ (Services)</h2>
-        <div class="service-cards">
+    <!-- Hire Box Section -->
+    <section class="hire-card">
+        <h3>Hire Abdun Nur</h3>
+        <div class="hire-option">
+            <span><i class="fa-solid fa-briefcase"></i> Freelance Job</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="hire-option">
+            <span><i class="fa-solid fa-pen-nib"></i> Full-Time / Contract Work</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </section>
+
+    <!-- Tabs Navigation -->
+    <nav class="tab-nav">
+        <button class="tab-btn active" onclick="openTab('services')">Services</button>
+        <button class="tab-btn" onclick="openTab('projects')">Projects</button>
+    </nav>
+
+    <!-- Services Section -->
+    <section id="services" class="tab-content active-content">
+        <h3 class="section-title">My Services</h3>
+        <div class="card-grid">
             <div class="card">
-                <h3>লোগো ডিজাইন</h3>
-                <p>প্রফেশনাল ও ইউনিক লোগো ব্র্যান্ডিং সার্ভিস।</p>
+                <div class="card-img-holder placeholder-1">
+                    <i class="fa-solid fa-image"></i>
+                </div>
+                <div class="card-body">
+                    <h4>Photo Editing & Retouching</h4>
+                    <p class="price">From US$ 10</p>
+                </div>
             </div>
             <div class="card">
-                <h3>টি-শার্ট ডিজাইন</h3>
-                <p>আকর্ষণীয় ও ট্রেন্ডি টি-শার্ট ডিজাইন।</p>
+                <div class="card-img-holder placeholder-2">
+                    <i class="fa-solid fa-vector-square"></i>
+                </div>
+                <div class="card-body">
+                    <h4>Logo & Brand Identity</h4>
+                    <p class="price">From US$ 50</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="tab-content">
+        <h3 class="section-title">Featured Projects</h3>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-img placeholder-3">
+                    <span class="project-title">Brand Identity Showcase</span>
+                </div>
+                <div class="project-meta">
+                    <span>Graphic Design</span>
+                    <span><i class="fa-solid fa-thumbs-up"></i> 357 &nbsp; <i class="fa-solid fa-eye"></i> 6.6K</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img placeholder-4">
+                    <span class="project-title">Photo Retouching & Editing</span>
+                </div>
+                <div class="project-meta">
+                    <span>Photo Editing</span>
+                    <span><i class="fa-solid fa-thumbs-up"></i> 1.3K &nbsp; <i class="fa-solid fa-eye"></i> 17.5K</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Abdun Nur. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JS File Link -->
     <script src="script.js"></script>
 </body>
 </html>
-
